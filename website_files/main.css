@@ -1,0 +1,425 @@
+body {
+    text-align: justify;
+    text-justify: inter-word;
+    background-image: url('C:/Users/swast/Desktop/DQ - 2/im.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    /* margin: 0;
+    padding: 0; */
+}          
+
+h1 {
+    margin:auto;
+    font-size: 4em;
+    font-family: serif;
+    color: transparent;
+    text-align: center;
+    animation: effect 2s linear infinite;
+}
+
+@keyframes effect {
+    50% {
+        background: radial-gradient(
+                #e73c3c, #00ccff, #700000);
+        
+        -webkit-background-clip: text;
+    }
+    0% {
+        background: linear-gradient(
+                #008000, #db9e2b, #700000);
+        -webkit-background-clip: text;
+    }
+    100% {
+        background: radial-gradient(
+                #3CE7D7, #861fafc9, #ff5454);
+        -webkit-background-clip: text;
+    }
+}
+
+/* loginpage */
+
+.loginbox {
+    width: 90%;
+    border: 2px solid rgba(0, 128, 0, 0.406);
+    padding: 10px;
+    margin: 20px 50px;
+    border-radius: 12%;
+    background-color: rgba(128, 128, 128, 0.379);
+
+}
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+  
+/* Set a style for all buttons */
+button {
+    background-color: rgb(9, 122, 160);
+    color: rgb(0, 0, 0);
+    padding: 10px 50px;
+    margin: 8px 0;
+    border-color: #ccc;
+    cursor: pointer;
+    width: 100%;
+    font-family: serif;
+    font-size: medium;
+    border-radius: 35%;    
+}
+
+button:hover {
+    opacity: 0.5;
+    background-color: #00ffa2;
+    color: #000;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+    color: #000;
+}
+
+.cancelbtn:hover {
+    background-color: #000;
+    color: #ffffff;
+}
+
+/* Center the image and position the closelog button */
+.imgcontainerlog {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatarlog {
+    width: 10%;
+    height: 10%;
+    border-radius: 20%;
+}
+
+.containerlog {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modallog {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modallog-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.closelog {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.closelog:hover,
+.closelog:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.modallog-content animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+/* Add Zoom Animation */
+.modalsignup-content animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn, .signupbtn {
+        width: 100%;
+    }
+}
+
+/* Signup page */
+
+/* Full-width input fields */
+/* input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+} */
+  
+/* Add a background color when the inputs get focus */
+/* input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+} */
+  
+/* Set a style for all buttons */
+/* button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+} */
+  
+/* button:hover {
+    opacity:1;
+} */
+  
+/* Extra styles for the cancel button */
+/* .cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+} */
+  
+/* Float cancel and signup buttons and add an equal width */
+/* .cancelbtn,  */
+.signupbtn {
+    float: right;
+    width: 50%;
+}
+  
+/* Add padding to containersignup elements */
+.containersignup {
+    padding: 16px;
+}
+  
+/* The Modalsignup (background) */
+.modalsignup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    /* background-color: #474e5d; */
+    /* background-color: rgb(0,0,0); Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 50px;
+}
+  
+/* Modalsignup Content/Box */
+.modalsignup-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+img.avatarsignup {
+    width: 10%;
+    height: 10%;
+    border-radius: 20%;
+}
+
+/* Style the horizontal ruler */
+/* hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+} */
+
+.imgcontainersignup {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+   
+/* The Closesignup Button (x) */
+.closesignup {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+  
+.closesignup:hover,
+.closesignup:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+  
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    /* .cancelbtn,  */
+    .signupbtn {
+       width: 100%;
+    }
+}
+
+
+/* Signup page 
+
+/* Full-width input fields 
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+  
+/* Add a background color when the inputs get focus 
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+  
+/* Set a style for all buttons 
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+  
+button:hover {
+    opacity:1;
+}
+  
+/* Extra styles for the cancel button 
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+  
+/* Float cancel and signup buttons and add an equal width 
+.cancelbtn, .signupbtn {
+    float: left;
+    width: 50%;
+}
+  
+/* Add padding to containerlog elements 
+.containerlog {
+    padding: 16px;
+}
+  
+/* The Modal (background) 
+.modallog {
+    display: none; /* Hidden by default 
+    position: fixed; /* Stay in place 
+    z-index: 1; /* Sit on top 
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width 
+    height: 100%; /* Full height 
+    overflow: auto; /* Enable scroll if needed 
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+  
+/* Modal Content/Box 
+.modallog-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered 
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size 
+}
+  
+/* Style the horizontal ruler 
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+   
+/* The Close Button (x) 
+.closelog {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+  
+.closelog:hover,
+.closelog:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+  
+/* Clear floats 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+/* Change styles for cancel button and signup button on extra small screens 
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}*/

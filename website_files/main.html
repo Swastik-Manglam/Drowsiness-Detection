@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title> Drowsiness Detection </title>
+        <link rel="stylesheet" href="main.css"><!--style-->
+    </head>
+    <body>
+        <div> <!--Heading -->
+            <h1 align="center"><b>Drowsiness Detection</b></h1>
+        </div>
+        
+        <div class="loginbox"> <!--login page -->
+            <h2 style="color: #fff;" align="center">Login For Surveillance</h2>
+            <div style="color: #fff;">Automobiles have surpassed all other modes of transportation in popularity. As the usage of automobiles becomes more common, so does the number of traffic accidents.
+   
+                When a driver is tired, his focus, judgement, and reaction sensitivity are all compromised.
+                
+                Our main goal is to develop a noninvasive, cost-effective, and efficient sleepiness detection system that can be seamlessly integrated into car driver monitoring systems.
+                
+                Artificial Intelligence (AI) has sparked a lot of research interest because of its ability to recognize human emotion. With its powerful ability to distinguish diverse variants of facial expressions, machine learning plays an essential role in human-computer interaction.
+                </div>
+            <button align="center"; onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><b>Login</b></button>
+            
+            <div id="id01" class="modallog">
+            
+                <form class="modallog-content animate" action="camera.html" method="post">
+                    <div class="imgcontainerlog">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="closelog" title="Close Modallog">&times;</span>
+                    <img src="login-button.png" alt="Avatar" class="avatarlog">
+                    </div>
+                
+                    <div class="containerlog">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+                
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                        
+                    <button style="border-radius: 0%; background-color: #0cf8a9;" type="submit"><b>Login</b></button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                    </div>
+                
+                    <div class="containerlog" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                </form>          
+            </div>
+
+            <script>
+                // Get the modallog
+                var modallog = document.getElementById('id01');
+                
+                // When the user clicks anywhere outside of the modallog, closelog it
+                window.onclick = function(eventlog) {
+                  if (eventlog.target == modallog) {
+                    modallog.style.display = "none";
+                  }
+                }
+            </script>
+
+            <div class="signupbox"> <!--signup page -->
+                <!-- <h2 style="color: #fff;">Modal Signup Form</h2> -->
+                <!-- <div style="color: #fff;">srdtghyjufjdmsnbhzsgvdf</div> -->
+                <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;"><b>Signup</b></button>
+                
+                <div id="id02" class="modalsignup">
+                
+                    <form class="modalsignup-content animate" action="aftersignup.html" method="post">
+                        <div class="imgcontainersignup">
+                        <span onclick="document.getElementById('id02').style.display='none'" class="closesignup" title="Close Modalsignup">&times;</span>
+                        <img src="signup-button.png" alt="Avatar" class="avatarsignup">
+                        </div>
+                    
+                        <div class="containersignup">
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+                    
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                            
+                        <button style="border-radius: 0%; background-color: #0cf8a9;" type="submit"><b>Signup</b></button>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                        </div>
+                    
+                        <div class="containersignup" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                        </div>
+                    </form>          
+                </div>
+            </div>
+
+            <script>
+                // Get the modalsignup
+                var modalsignup = document.getElementById('id02');
+                
+                // When the user clicks anywhere outside of the modalsignup, closesignup it
+                window.onclick = function(eventsignup) {
+                  if (eventsignup.target == modalsignup) {
+                    modalsignup.style.display = "none";
+                  }
+                }
+            </script>
+        </div>
+    </body>
+</html>

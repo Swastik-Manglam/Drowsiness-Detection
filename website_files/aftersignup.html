@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title> Drowsiness Detection </title>
+        <link rel="stylesheet" href="main.css"><!--style-->
+    </head>
+    <body>
+        <div> <!--Heading -->
+            <h1 align="center"><b>Drowsiness Detection</b></h1>
+        </div>
+        
+        <div class="loginbox"> <!--login page -->
+            <h2 style="color: #fff;" align="center">Login For Surveillance</h2>
+            <div style="color: #fff;">Automobiles have become the most popular tools of transportation. As the frequency of automobile use continues to increase, traffic accidents are also increasing. 
+   
+                When a driver is fatigued, his concentration, judgment ability, and reaction sensitivity are reduced.
+                </div>
+            <button align="center"; onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><b>Login</b></button>
+            
+            <div id="id01" class="modallog">
+            
+                <form class="modallog-content animate" action="camera.html" method="post">
+                    <div class="imgcontainerlog">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="closelog" title="Close Modallog">&times;</span>
+                    <img src="login-button.png" alt="Avatar" class="avatarlog">
+                    </div>
+                
+                    <div class="containerlog">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+                
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                        
+                    <button style="border-radius: 0%; background-color: #0cf8a9;" type="submit"><b>Login</b></button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                    </div>
+                
+                    <div class="containerlog" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                </form>          
+            </div>
+
+            <script>
+                // Get the modallog
+                var modallog = document.getElementById('id01');
+                
+                // When the user clicks anywhere outside of the modallog, closelog it
+                window.onclick = function(eventlog) {
+                  if (eventlog.target == modallog) {
+                    modallog.style.display = "none";
+                  }
+                }
+            </script>
+        </div>
+    </body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title> Drowsiness Detection </title>
+        <!-- <link hreflang="css" href="1.css"> -->
+        <link rel="stylesheet" href="main.css">
+        <!-- <link rel="loginpage" href="login.html"> -->
+        <!-- <a href="login.html">loginpage</a> -->
+        <!-- <link rel="loginstylesheet" href="login.css"> 
+    </head>
+    <body>
+        <div> <!--Heading 
+            <h1 align="center"><b>Drowsiness Detection</b></h1>
+        </div>
+        
+        <div class="loginbox"> <!--login page 
+            <h2 style="color: #fff;">Modallog Login Form</h2>
+            <div style="color: #fff;">srdtghyjufjdmsnbhzsgvdf</div>
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><b>Login</b></button>
+            
+            <div id="id01" class="modallog">
+            
+                <form class="modallog-content animate" action="/action_page.php" method="post">
+                    <div class="imgcontainerlog">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="closelog" title="Close Modallog">&times;</span>
+                    <img src="img_avatarlog2.png" alt="Avatar" class="avatarlog">
+                    </div>
+                
+                    <div class="containerlog">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+                
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                        
+                    <button style="border-radius: 0%; background-color: #0cf8a9;" type="submit"><b>Login</b></button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                    </div>
+                
+                    <div class="containerlog" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                </form>          
+            </div>
+
+            <script>
+                // Get the modallog
+                var modallog = document.getElementById('id01');
+                
+                // When the user clicks anywhere outside of the modallog, closelog it
+                window.onclick = function(eventlog) {
+                  if (eventlog.target == modallog) {
+                    modallog.style.display = "none";
+                  }
+                }
+            </script>
+        </div>
+    </body>
+</html> -->
